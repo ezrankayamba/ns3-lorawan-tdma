@@ -1,2 +1,2 @@
-##LoRaWAN TDMA Version
+## LoRaWAN TDMA Version
 
