@@ -54,8 +54,8 @@ TDMASender::ScheduleReach(void){
 	ltm.tm_sec -= sim_tm;
 
 	Ptr<Packet> packet = Create<Packet> (m_packet);
+	NS_LOG_INFO("Sent: "<<this->m_packet <<", At: " << now_str << "The packet: " << packet);
 	m_mac->Send (packet);
-	NS_LOG_INFO("Sent: "<<this->m_packet <<", At: " << now_str);
 
 	Simulator::Cancel (m_sendEvent);
 	m_sendEvent = Simulator::Schedule (m_pause, &TDMASender::SendPacket, this);

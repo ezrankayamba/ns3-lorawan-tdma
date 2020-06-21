@@ -117,8 +117,10 @@ FileHelper::WriteProbe (const std::string &typeId,
 
   // See if there are any matches for the probe's path with the last
   // token removed.
+  NS_LOG_DEBUG(pathWithoutLastToken << "???????");
   Config::MatchContainer matches = Config::LookupMatches (pathWithoutLastToken);
   uint32_t matchCount = matches.GetN ();
+  NS_LOG_DEBUG("Match Count: " << matchCount);
 
   // This is used to make the probe's context be unique.
   std::string matchIdentifier;
