@@ -105,6 +105,7 @@ public:
   static std::vector<int> SetSpreadingFactorsGivenDistribution (NodeContainer endDevices,
                                                                 NodeContainer gateways,
                                                                 std::vector<double> distribution);
+  void SetRetransMax(uint16_t rtx);
 
 private:
   /**
@@ -143,6 +144,7 @@ private:
   Ptr<LoraDeviceAddressGenerator> m_addrGen; //!< Pointer to the address generator to use
   enum DeviceType m_deviceType; //!< The kind of device to install
   enum Regions m_region; //!< The region in which the device will operate
+  uint16_t retransMax;
 };
 
 } // namespace lorawan

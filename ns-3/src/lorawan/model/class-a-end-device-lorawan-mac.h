@@ -162,6 +162,11 @@ public:
    */
   virtual void OnRxClassParamSetupReq (Ptr<RxParamSetupReq> rxParamSetupReq);
 
+  /*
+   * Set retransmission or 0 to disable
+   */
+  void SetRetransMax(uint16_t rtx);
+
 private:
 
   /**
@@ -212,6 +217,8 @@ private:
    * The RX1DROffset parameter value
    */
   uint8_t m_rx1DrOffset;
+
+  uint16_t m_maxRetrans;
 
 }; /* ClassAEndDeviceLorawanMac */
 } /* namespace lorawan */

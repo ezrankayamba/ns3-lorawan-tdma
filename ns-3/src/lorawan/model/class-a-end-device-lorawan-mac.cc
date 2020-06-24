@@ -262,29 +262,37 @@ ClassAEndDeviceLorawanMac::FailedReception (Ptr<Packet const> packet)
         }
     }
 }
-
+void ClassAEndDeviceLorawanMac::SetRetransMax(uint16_t rtx){
+	m_maxRetrans=rtx;
+}
 void
 ClassAEndDeviceLorawanMac::TxFinished (Ptr<const Packet> packet)
 {
   NS_LOG_FUNCTION_NOARGS ();
+  NS_LOG_INFO ("Max Retransmit: " << m_maxRetrans);
 
-  // Schedule the opening of the first receive window
-  Simulator::Schedule (m_receiveDelay1,
-                       &ClassAEndDeviceLorawanMac::OpenFirstReceiveWindow, this);
+  /*
+   * If m_maxNumbTx = 0 means disable retransmission
+   */
 
-  // Schedule the opening of the second receive window
-  m_secondReceiveWindow = Simulator::Schedule (m_receiveDelay2,
-                                               &ClassAEndDeviceLorawanMac::OpenSecondReceiveWindow,
-                                               this);
-  // // Schedule the opening of the first receive window
-  // Simulator::Schedule (m_receiveDelay1,
-  //                      &ClassAEndDeviceLorawanMac::OpenFirstReceiveWindow, this);
-  //
-  // // Schedule the opening of the second receive window
-  // m_secondReceiveWindow = Simulator::Schedule (m_receiveDelay2,
-  //                                              &ClassAEndDeviceLorawanMac::OpenSecondReceiveWindow,
-  //                                              this);
+  if (m_maxRetrans > 0){
+	  // Schedule the opening of the first receive window
+	  Simulator::Schedule (m_receiveDelay1,
+						   &ClassAEndDeviceLorawanMac::OpenFirstReceiveWindow, this);
 
+	  // Schedule the opening of the second receive window
+	  m_secondReceiveWindow = Simulator::Schedule (m_receiveDelay2,
+												   &ClassAEndDeviceLorawanMac::OpenSecondReceiveWindow,
+												   this);
+	  // // Schedule the opening of the first receive window
+	  // Simulator::Schedule (m_receiveDelay1,
+	  //                      &ClassAEndDeviceLorawanMac::OpenFirstReceiveWindow, this);
+	  //
+	  // // Schedule the opening of the second receive window
+	  // m_secondReceiveWindow = Simulator::Schedule (m_receiveDelay2,
+	  //                                              &ClassAEndDeviceLorawanMac::OpenSecondReceiveWindow,
+	  //                                              this);
+  }
   // Switch the PHY to sleep
   m_phy->GetObject<EndDeviceLoraPhy> ()->SwitchToSleep ();
 }
@@ -518,6 +526,8 @@ ClassAEndDeviceLorawanMac::GetSecondReceiveWindowFrequency (void)
 /////////////////////////
 // MAC command methods //
 /////////////////////////
+
+
 
 void
 ClassAEndDeviceLorawanMac::OnRxClassParamSetupReq (Ptr<RxParamSetupReq> rxParamSetupReq)

@@ -70,6 +70,10 @@ LorawanMacHelper::SetRegion (enum LorawanMacHelper::Regions region)
   m_region = region;
 }
 
+void LorawanMacHelper::SetRetransMax(uint16_t rtx){
+	retransMax=rtx;
+}
+
 Ptr<LorawanMac>
 LorawanMacHelper::Create (Ptr<Node> node, Ptr<NetDevice> device) const
 {
@@ -80,6 +84,7 @@ LorawanMacHelper::Create (Ptr<Node> node, Ptr<NetDevice> device) const
   if (m_deviceType == ED_A && m_addrGen != 0)
     {
       mac->GetObject<ClassAEndDeviceLorawanMac> ()->SetDeviceAddress (m_addrGen->NextAddress ());
+      mac->GetObject<ClassAEndDeviceLorawanMac> ()->SetRetransMax (retransMax);
     }
 
   // Add a basic list of channels based on the region where the device is

@@ -1,0 +1,266 @@
+Waf: Entering directory `/home/ubuntu/ns3-project/ns-3/build'
+Waf: Leaving directory `/home/ubuntu/ns3-project/ns-3/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.441s)
+SimpleTDMANetworkExample:main(): Creating the channel...
++0.000000000s -1 SimpleTDMANetworkExample:main(): Setting up helpers...
++0.000000000s -1 SimpleTDMANetworkExample:main(): Creating the end device...
++0.000000000s -1 LoraPhy:SetChannel(0x55fba79f6430, 0x55fba79da3f0)
++0.000000000s -1 LoraPhy:SetDevice(0x55fba79f6430, 0x55fba7a45fb0)
++0.000000000s -1 ClassAEndDeviceLorawanMac:ClassAEndDeviceLorawanMac(0x55fba79e4d40)
++0.000000000s -1 LoraPhy:SetChannel(0x55fba79f4390, 0x55fba79da3f0)
++0.000000000s -1 LoraPhy:SetDevice(0x55fba79f4390, 0x55fba7a48c30)
++0.000000000s -1 ClassAEndDeviceLorawanMac:ClassAEndDeviceLorawanMac(0x55fba7a49030)
++0.000000000s -1 SimpleTDMANetworkExample:main(): Creating the gateway...
++0.000000000s -1 GatewayLoraPhy:GatewayLoraPhy()
++0.000000000s -1 LoraPhy:SetChannel(0x55fba79261f0, 0x55fba79da3f0)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.5)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.5)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 LoraPhy:SetDevice(0x55fba79261f0, 0x55fba7a49a60)
++0.000000000s -1 GatewayLorawanMac:GatewayLorawanMac(0x55fba79ea4e0)
++0.000000000s -1 GatewayLoraPhy:ResetReceptionPaths(0x55fba79261f0)
++0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.5)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.5)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x55fba79261f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:ReceptionPath()
++0.000000000s 0 TDMASender:StartApplication(0x55fba7974290)
++0.000000000s 0 TDMASender:StartApplication(): Starting Application with DELTA of 0 seconds, At: 2020-06-24 23:21:34
++0.000000000s 1 TDMASender:StartApplication(0x55fba79cebd0)
++0.000000000s 1 TDMASender:StartApplication(): Starting Application with DELTA of 8.07845 seconds, At: 2020-06-24 23:21:34
++0.000000000s 0 TDMASender:SendPacket(): Now: 2020-06-24 23:21:34, Next: 2020-06-24 23:21:34
++0.000000000s 1 TDMASender:SendPacket(): Now: 2020-06-24 23:21:34, Next: 2020-06-24 23:21:42
++0.000000000s 0 TDMASender:ScheduleReach(): Sent: 44, At: 2020-06-24 23:21:34The packet: 0x55fba7a50c10
++0.000000000s 0 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
++0.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7a50c10
++0.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7a50c10
++0.000000000s 0 LoraPhy:GetOnAirTime(0x55fba7a50c10, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++0.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 53 bytes
++0.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 440, den = 28, payloadSymbNb = 88, tSym = 0.001024
++0.000000000s 0 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++0.000000000s 0 LoraPhy:GetOnAirTime(): tPayload = 0.090112
++0.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.102656
++0.000000000s 0 LoraPhy:GetMobility()
++0.000000000s 0 LoraPhy:GetMobility()
++0.000000000s 0 LoraPhy:GetMobility()
++0.000000000s 0 LoraPhy:GetOnAirTime(0x55fba7a50c10, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++0.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 53 bytes
++0.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 440, den = 28, payloadSymbNb = 88, tSym = 0.001024
++0.000000000s 0 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++0.000000000s 0 LoraPhy:GetOnAirTime(): tPayload = 0.090112
++0.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.102656
++0.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5, m_rx1DrOffset: 0, replyDataRate: 5.
++0.102655999s 2 GatewayLorawanMac:Receive(0x55fba79ea4e0, 0x55fba7a50c10)
++0.102655999s 2 GatewayLorawanMac:Receive(): Received packet: 0x55fba7a50c10
++0.102656009s 0 ClassAEndDeviceLorawanMac:TxFinished()
++0.102656009s 0 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
++8.078447999s 1 TDMASender:ScheduleReach(): Sent: 31, At: 2020-06-24 23:21:42The packet: 0x55fba7a468e0
++8.078447999s 1 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
++8.078447999s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7a468e0
++8.078447999s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7a468e0
++8.078447999s 1 LoraPhy:GetOnAirTime(0x55fba7a468e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++8.078447999s 1 LoraPhy:GetOnAirTime(): Packet of size 40 bytes
++8.078447999s 1 LoraPhy:GetOnAirTime(): Time computation: num = 336, den = 28, payloadSymbNb = 68, tSym = 0.001024
++8.078447999s 1 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++8.078447999s 1 LoraPhy:GetOnAirTime(): tPayload = 0.069632
++8.078447999s 1 LoraPhy:GetOnAirTime(): Total time = 0.082176
++8.078447999s 1 LoraPhy:GetMobility()
++8.078447999s 1 LoraPhy:GetMobility()
++8.078447999s 1 LoraPhy:GetMobility()
++8.078447999s 1 LoraPhy:GetOnAirTime(0x55fba7a468e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++8.078447999s 1 LoraPhy:GetOnAirTime(): Packet of size 40 bytes
++8.078447999s 1 LoraPhy:GetOnAirTime(): Time computation: num = 336, den = 28, payloadSymbNb = 68, tSym = 0.001024
++8.078447999s 1 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++8.078447999s 1 LoraPhy:GetOnAirTime(): tPayload = 0.069632
++8.078447999s 1 LoraPhy:GetOnAirTime(): Total time = 0.082176
++8.078447999s 1 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5, m_rx1DrOffset: 0, replyDataRate: 5.
++8.160624008s 1 ClassAEndDeviceLorawanMac:TxFinished()
++8.160624008s 1 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
++8.160627333s 2 GatewayLorawanMac:Receive(0x55fba79ea4e0, 0x55fba7a468e0)
++8.160627333s 2 GatewayLorawanMac:Receive(): Received packet: 0x55fba7a468e0
++1800.000000000s 0 TDMASender:SendPacket(): Now: 2020-06-24 23:51:34, Next: 2020-06-24 23:51:34
++1800.000000000s 0 TDMASender:ScheduleReach(): Sent: 33, At: 2020-06-24 23:51:34The packet: 0x55fba7a50ce0
++1800.000000000s 0 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
++1800.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7a50ce0
++1800.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7a50ce0
++1800.000000000s 0 LoraPhy:GetOnAirTime(0x55fba7a50ce0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++1800.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 42 bytes
++1800.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 352, den = 28, payloadSymbNb = 73, tSym = 0.001024
++1800.000000000s 0 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++1800.000000000s 0 LoraPhy:GetOnAirTime(): tPayload = 0.074752
++1800.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.087296
++1800.000000000s 0 LoraPhy:GetMobility()
++1800.000000000s 0 LoraPhy:GetMobility()
++1800.000000000s 0 LoraPhy:GetMobility()
++1800.000000000s 0 LoraPhy:GetOnAirTime(0x55fba7a50ce0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++1800.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 42 bytes
++1800.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 352, den = 28, payloadSymbNb = 73, tSym = 0.001024
++1800.000000000s 0 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++1800.000000000s 0 LoraPhy:GetOnAirTime(): tPayload = 0.074752
++1800.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.087296
++1800.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5, m_rx1DrOffset: 0, replyDataRate: 5.
++1800.087295999s 2 GatewayLorawanMac:Receive(0x55fba79ea4e0, 0x55fba7a50ce0)
++1800.087295999s 2 GatewayLorawanMac:Receive(): Received packet: 0x55fba7a50ce0
++1800.087296009s 0 ClassAEndDeviceLorawanMac:TxFinished()
++1800.087296009s 0 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
++1808.078447999s 1 TDMASender:SendPacket(): Now: 2020-06-24 23:51:42, Next: 2020-06-24 23:51:50
++1816.156895998s 1 TDMASender:ScheduleReach(): Sent: 42, At: 2020-06-24 23:51:50The packet: 0x55fba7968ee0
++1816.156895998s 1 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
++1816.156895998s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7968ee0
++1816.156895998s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7968ee0
++1816.156895998s 1 LoraPhy:GetOnAirTime(0x55fba7968ee0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++1816.156895998s 1 LoraPhy:GetOnAirTime(): Packet of size 51 bytes
++1816.156895998s 1 LoraPhy:GetOnAirTime(): Time computation: num = 424, den = 28, payloadSymbNb = 88, tSym = 0.001024
++1816.156895998s 1 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++1816.156895998s 1 LoraPhy:GetOnAirTime(): tPayload = 0.090112
++1816.156895998s 1 LoraPhy:GetOnAirTime(): Total time = 0.102656
++1816.156895998s 1 LoraPhy:GetMobility()
++1816.156895998s 1 LoraPhy:GetMobility()
++1816.156895998s 1 LoraPhy:GetMobility()
++1816.156895998s 1 LoraPhy:GetOnAirTime(0x55fba7968ee0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++1816.156895998s 1 LoraPhy:GetOnAirTime(): Packet of size 51 bytes
++1816.156895998s 1 LoraPhy:GetOnAirTime(): Time computation: num = 424, den = 28, payloadSymbNb = 88, tSym = 0.001024
++1816.156895998s 1 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++1816.156895998s 1 LoraPhy:GetOnAirTime(): tPayload = 0.090112
++1816.156895998s 1 LoraPhy:GetOnAirTime(): Total time = 0.102656
++1816.156895998s 1 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5, m_rx1DrOffset: 0, replyDataRate: 5.
++1816.259552007s 1 ClassAEndDeviceLorawanMac:TxFinished()
++1816.259552007s 1 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
++1816.259555332s 2 GatewayLorawanMac:Receive(0x55fba79ea4e0, 0x55fba7968ee0)
++1816.259555332s 2 GatewayLorawanMac:Receive(): Received packet: 0x55fba7968ee0
++3600.000000000s 0 TDMASender:SendPacket(): Now: 2020-06-25 00:21:34, Next: 2020-06-25 00:21:34
++3600.000000000s 0 TDMASender:ScheduleReach(): Sent: 36, At: 2020-06-25 00:21:34The packet: 0x55fba79358e0
++3600.000000000s 0 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
++3600.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba79358e0
++3600.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba79358e0
++3600.000000000s 0 LoraPhy:GetOnAirTime(0x55fba79358e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++3600.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 45 bytes
++3600.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 376, den = 28, payloadSymbNb = 78, tSym = 0.001024
++3600.000000000s 0 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++3600.000000000s 0 LoraPhy:GetOnAirTime(): tPayload = 0.079872
++3600.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.092416
++3600.000000000s 0 LoraPhy:GetMobility()
++3600.000000000s 0 LoraPhy:GetMobility()
++3600.000000000s 0 LoraPhy:GetMobility()
++3600.000000000s 0 LoraPhy:GetOnAirTime(0x55fba79358e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++3600.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 45 bytes
++3600.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 376, den = 28, payloadSymbNb = 78, tSym = 0.001024
++3600.000000000s 0 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++3600.000000000s 0 LoraPhy:GetOnAirTime(): tPayload = 0.079872
++3600.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.092416
++3600.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5, m_rx1DrOffset: 0, replyDataRate: 5.
++3600.092415999s 2 GatewayLorawanMac:Receive(0x55fba79ea4e0, 0x55fba79358e0)
++3600.092415999s 2 GatewayLorawanMac:Receive(): Received packet: 0x55fba79358e0
++3600.092416009s 0 ClassAEndDeviceLorawanMac:TxFinished()
++3600.092416009s 0 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
++3616.156895998s 1 TDMASender:SendPacket(): Now: 2020-06-25 00:21:50, Next: 2020-06-25 00:21:58
++3624.235343997s 1 TDMASender:ScheduleReach(): Sent: 46, At: 2020-06-25 00:21:58The packet: 0x55fba7985060
++3624.235343997s 1 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
++3624.235343997s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7985060
++3624.235343997s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7985060
++3624.235343997s 1 LoraPhy:GetOnAirTime(0x55fba7985060, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++3624.235343997s 1 LoraPhy:GetOnAirTime(): Packet of size 55 bytes
++3624.235343997s 1 LoraPhy:GetOnAirTime(): Time computation: num = 456, den = 28, payloadSymbNb = 93, tSym = 0.001024
++3624.235343997s 1 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++3624.235343997s 1 LoraPhy:GetOnAirTime(): tPayload = 0.095232
++3624.235343997s 1 LoraPhy:GetOnAirTime(): Total time = 0.107776
++3624.235343997s 1 LoraPhy:GetMobility()
++3624.235343997s 1 LoraPhy:GetMobility()
++3624.235343997s 1 LoraPhy:GetMobility()
++3624.235343997s 1 LoraPhy:GetOnAirTime(0x55fba7985060, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++3624.235343997s 1 LoraPhy:GetOnAirTime(): Packet of size 55 bytes
++3624.235343997s 1 LoraPhy:GetOnAirTime(): Time computation: num = 456, den = 28, payloadSymbNb = 93, tSym = 0.001024
++3624.235343997s 1 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++3624.235343997s 1 LoraPhy:GetOnAirTime(): tPayload = 0.095232
++3624.235343997s 1 LoraPhy:GetOnAirTime(): Total time = 0.107776
++3624.235343997s 1 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5, m_rx1DrOffset: 0, replyDataRate: 5.
++3624.343120006s 1 ClassAEndDeviceLorawanMac:TxFinished()
++3624.343120006s 1 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
++3624.343123331s 2 GatewayLorawanMac:Receive(0x55fba79ea4e0, 0x55fba7985060)
++3624.343123331s 2 GatewayLorawanMac:Receive(): Received packet: 0x55fba7985060
++5400.000000000s 0 TDMASender:SendPacket(): Now: 2020-06-25 00:51:34, Next: 2020-06-25 00:51:34
++5400.000000000s 0 TDMASender:ScheduleReach(): Sent: 38, At: 2020-06-25 00:51:34The packet: 0x55fba799fa00
++5400.000000000s 0 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
++5400.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba799fa00
++5400.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba799fa00
++5400.000000000s 0 LoraPhy:GetOnAirTime(0x55fba799fa00, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++5400.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 47 bytes
++5400.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 392, den = 28, payloadSymbNb = 78, tSym = 0.001024
++5400.000000000s 0 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++5400.000000000s 0 LoraPhy:GetOnAirTime(): tPayload = 0.079872
++5400.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.092416
++5400.000000000s 0 LoraPhy:GetMobility()
++5400.000000000s 0 LoraPhy:GetMobility()
++5400.000000000s 0 LoraPhy:GetMobility()
++5400.000000000s 0 LoraPhy:GetOnAirTime(0x55fba799fa00, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++5400.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 47 bytes
++5400.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 392, den = 28, payloadSymbNb = 78, tSym = 0.001024
++5400.000000000s 0 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++5400.000000000s 0 LoraPhy:GetOnAirTime(): tPayload = 0.079872
++5400.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.092416
++5400.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5, m_rx1DrOffset: 0, replyDataRate: 5.
++5400.092415999s 2 GatewayLorawanMac:Receive(0x55fba79ea4e0, 0x55fba799fa00)
++5400.092415999s 2 GatewayLorawanMac:Receive(): Received packet: 0x55fba799fa00
++5400.092416009s 0 ClassAEndDeviceLorawanMac:TxFinished()
++5400.092416009s 0 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
++5424.235343997s 1 TDMASender:SendPacket(): Now: 2020-06-25 00:51:58, Next: 2020-06-25 00:52:06
++5432.313791996s 1 TDMASender:ScheduleReach(): Sent: 48, At: 2020-06-25 00:52:06The packet: 0x55fba7a46470
++5432.313791996s 1 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
++5432.313791996s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7a46470
++5432.313791996s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x55fba7a46470
++5432.313791996s 1 LoraPhy:GetOnAirTime(0x55fba7a46470, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++5432.313791996s 1 LoraPhy:GetOnAirTime(): Packet of size 57 bytes
++5432.313791996s 1 LoraPhy:GetOnAirTime(): Time computation: num = 472, den = 28, payloadSymbNb = 93, tSym = 0.001024
++5432.313791996s 1 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++5432.313791996s 1 LoraPhy:GetOnAirTime(): tPayload = 0.095232
++5432.313791996s 1 LoraPhy:GetOnAirTime(): Total time = 0.107776
++5432.313791996s 1 LoraPhy:GetMobility()
++5432.313791996s 1 LoraPhy:GetMobility()
++5432.313791996s 1 LoraPhy:GetMobility()
++5432.313791996s 1 LoraPhy:GetOnAirTime(0x55fba7a46470, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++5432.313791996s 1 LoraPhy:GetOnAirTime(): Packet of size 57 bytes
++5432.313791996s 1 LoraPhy:GetOnAirTime(): Time computation: num = 472, den = 28, payloadSymbNb = 93, tSym = 0.001024
++5432.313791996s 1 LoraPhy:GetOnAirTime(): tPreamble = 0.012544
++5432.313791996s 1 LoraPhy:GetOnAirTime(): tPayload = 0.095232
++5432.313791996s 1 LoraPhy:GetOnAirTime(): Total time = 0.107776
++5432.313791996s 1 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5, m_rx1DrOffset: 0, replyDataRate: 5.
++5432.421568005s 1 ClassAEndDeviceLorawanMac:TxFinished()
++5432.421568005s 1 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
++5432.421571330s 2 GatewayLorawanMac:Receive(0x55fba79ea4e0, 0x55fba7a46470)
++5432.421571330s 2 GatewayLorawanMac:Receive(): Received packet: 0x55fba7a46470
+TDMASender:~TDMASender()
+TDMASender:~TDMASender()
+0.000000 0.000000

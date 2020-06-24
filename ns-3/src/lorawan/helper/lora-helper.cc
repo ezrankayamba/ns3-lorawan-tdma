@@ -221,13 +221,17 @@ LoraHelper::DoPrintDeviceStatus (NodeContainer endDevices, NodeContainer gateway
       Ptr<NetDevice> netDevice = object->GetDevice (0);
       Ptr<LoraNetDevice> loraNetDevice = netDevice->GetObject<LoraNetDevice> ();
       NS_ASSERT (loraNetDevice != 0);
+//      EndDeviceLoraPhy
       Ptr<ClassAEndDeviceLorawanMac> mac = loraNetDevice->GetMac ()->GetObject<ClassAEndDeviceLorawanMac> ();
+      Ptr<EndDeviceLoraPhy> phy = loraNetDevice->GetPhy ()->GetObject<EndDeviceLoraPhy> ();
       int dr = int(mac->GetDataRate ());
       double txPower = mac->GetTransmissionPower ();
       Vector pos = position->GetPosition ();
+      EndDeviceLoraPhy::State state=phy->GetState ();
       outputFile << currentTime.GetSeconds () << " "
                  << object->GetId () <<  " "
                  << pos.x << " " << pos.y << " " << dr << " "
+				 << state << " "
                  << unsigned(txPower) << std::endl;
     }
   // for (NodeContainer::Iterator j = gateways.Begin (); j != gateways.End (); ++j)
