@@ -13,6 +13,9 @@ using namespace lorawan;
 namespace ns3 {
 
 namespace tdma {
+struct TDMAParams {
+	uint16_t interval;
+};
 class TDMASender : public Application
 {
 public:
@@ -28,6 +31,7 @@ public:
    * Send a packet using the LoraNetDevice's Send method.
    */
   void SendPacket (void);
+  void SetTDMAParams(TDMAParams params);
 
   /**
    * Start the application by scheduling the first SendPacket event.
@@ -42,12 +46,13 @@ public:
 private:
   uint16_t m_rate;
   uint16_t m_packet;
-  uint16_t m_slot;
+  double m_send_window;
   uint16_t m_tracker;
   uint16_t node_id;
   double slot;
+  double toa;
   tm startTime;
-  Time m_pause;
+  uint16_t m_interval;
 
 
   /**

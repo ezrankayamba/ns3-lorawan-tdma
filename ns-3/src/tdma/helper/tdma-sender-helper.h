@@ -34,14 +34,14 @@ public:
 
   ApplicationContainer Install (Ptr<Node> node) const;
 
-  void SetSlot(uint16_t slot);
+  void SetTDMAParams(TDMAParams params);
 
 private:
   Ptr<Application> InstallPriv (Ptr<Node> node) const;
 
   ObjectFactory m_factory;
 
-  uint16_t m_slot;
+  TDMAParams tdma_params;
 };
 
 

@@ -1,0 +1,4 @@
+set xlabel "Time(min)"
+set ylabel "Battery Level"
+plot "battery-level-0001.txt" using ($1/60):2 with lines linecolor "blue"  title "Device 1", "battery-level-0002.txt" using ($1/60):2 with lines linecolor "green"  title "Device 2", "battery-level-0003.txt" using ($1/60)
+:2 with lines linecolor "red"  title "Device 3"

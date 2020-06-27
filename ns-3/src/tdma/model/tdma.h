@@ -10,9 +10,9 @@
 
 namespace ns3 {
 	namespace tdma {
-
 		double delta(uint16_t n_id);
 		void fmt_date_tm(tm *ltm, char * date_str, double add_sec);
+		double get_toa(uint16_t n_id);
 
 	}
 

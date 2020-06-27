@@ -127,9 +127,10 @@ ClassAEndDeviceLorawanMac::SendToPhy (Ptr<Packet> packetToSend)
   // Instruct the PHY on the right Spreading Factor to listen for during the window
   // create a SetReplyDataRate function?
   uint8_t replyDataRate = GetFirstReceiveWindowDataRate ();
-  NS_LOG_DEBUG ("m_dataRate: " << unsigned (m_dataRate) <<
+  /*NS_LOG_DEBUG ("m_dataRate: " << unsigned (m_dataRate) <<
                 ", m_rx1DrOffset: " << unsigned (m_rx1DrOffset) <<
-                ", replyDataRate: " << unsigned (replyDataRate) << ".");
+                ", replyDataRate: " << unsigned (replyDataRate) << ".");*/
+  NS_LOG_DEBUG ("m_dataRate: " << unsigned (m_dataRate));
 
   m_phy->GetObject<EndDeviceLoraPhy> ()->SetSpreadingFactor
     (GetSfFromDataRate (replyDataRate));

@@ -13,76 +13,54 @@ namespace ns3 {
 
 namespace tdma {
 
+NS_LOG_COMPONENT_DEFINE("TDMASenderHelper");
 
-NS_LOG_COMPONENT_DEFINE ("TDMASenderHelper");
-
-TDMASenderHelper::TDMASenderHelper ()
-{
-  m_factory.SetTypeId ("ns3::TDMASender");
+TDMASenderHelper::TDMASenderHelper() {
+	m_factory.SetTypeId("ns3::TDMASender");
 }
 
-TDMASenderHelper::~TDMASenderHelper ()
-{
+TDMASenderHelper::~TDMASenderHelper() {
 }
 
-void
-TDMASenderHelper::SetSlot(uint16_t slot)
-{
-	m_slot = slot;
+void TDMASenderHelper::SetTDMAParams(TDMAParams params) {
+	tdma_params = params;
 }
 
-void
-TDMASenderHelper::SetAttribute (std::string name, const AttributeValue &value)
-{
-  m_factory.Set (name, value);
+void TDMASenderHelper::SetAttribute(std::string name,
+		const AttributeValue &value) {
+	m_factory.Set(name, value);
 }
 
-ApplicationContainer
-TDMASenderHelper::Install (Ptr<Node> node) const
-{
-  return ApplicationContainer (InstallPriv (node));
+ApplicationContainer TDMASenderHelper::Install(Ptr<Node> node) const {
+	return ApplicationContainer(InstallPriv(node));
 }
 
-ApplicationContainer
-TDMASenderHelper::Install (NodeContainer c) const
-{
-  ApplicationContainer apps;
-  uint16_t counter(0);
-  for (NodeContainer::Iterator i = c.Begin (); i != c.End (); ++i){
-	  counter++;
-  }
-//  NS_LOG_INFO("Counter: "<<counter);
-//  Time pause = counter > 1 ? Seconds((counter - 1) * (2 + m_slot)) : Seconds(2);
-//  Time pause = Seconds(30*60);
+ApplicationContainer TDMASenderHelper::Install(NodeContainer c) const {
+	ApplicationContainer apps;
+	uint16_t counter(0);
+	for (NodeContainer::Iterator i = c.Begin(); i != c.End(); ++i) {
+		counter++;
+	}
+	counter = 0;
+	for (NodeContainer::Iterator i = c.Begin(); i != c.End(); ++i) {
+		apps.Add(InstallPriv(*i));
+		counter++;
+	}
 
-  counter=0;
-  for (NodeContainer::Iterator i = c.Begin (); i != c.End (); ++i){
-//	 Time delay = Seconds(0 + counter * (1 + m_slot));
-     apps.Add (InstallPriv (*i));
-     counter++;
-  }
-
-  return apps;
+	return apps;
 }
 
-Ptr<Application>
-TDMASenderHelper::InstallPriv (Ptr<Node> node) const
-{
-//  NS_LOG_FUNCTION (this << node->GetId ());
+Ptr<Application> TDMASenderHelper::InstallPriv(Ptr<Node> node) const {
 
-  Ptr<TDMASender> app = m_factory.Create<TDMASender> ();
+	Ptr<TDMASender> app = m_factory.Create<TDMASender>();
+	app->SetTDMAParams(tdma_params);
+	app->SetNode(node);
+	node->AddApplication(app);
 
-//  app->SetInitialDelay (delay);
-//  app->SetPause (pause);
-
-  app->SetNode (node);
-  node->AddApplication (app);
-
-  return app;
+	return app;
 }
 
 }
-
 
 }
 

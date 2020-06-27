@@ -167,6 +167,7 @@ LoraPhy::GetOnAirTime (Ptr<Packet> packet, LoraTxParameters txParams)
   // Compute the symbol duration
   // Bandwidth is in Hz
   double tSym = pow (2, int(txParams.sf)) / (txParams.bandwidthHz);
+  NS_LOG_DEBUG("tSym: " << tSym);
 
   // Compute the preamble duration
   double tPreamble = (double(txParams.nPreamble) + 4.25) * tSym;
@@ -193,7 +194,7 @@ LoraPhy::GetOnAirTime (Ptr<Packet> packet, LoraTxParameters txParams)
 
   NS_LOG_DEBUG ("Time computation: num = " << num << ", den = " << den <<
                 ", payloadSymbNb = " << payloadSymbNb << ", tSym = " << tSym);
-  NS_LOG_DEBUG ("tPreamble = " << tPreamble);
+  NS_LOG_DEBUG ("tPreamble.0 = " << tPreamble);
   NS_LOG_DEBUG ("tPayload = " << tPayload);
   NS_LOG_DEBUG ("Total time = " << tPreamble + tPayload);
 

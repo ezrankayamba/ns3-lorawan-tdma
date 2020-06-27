@@ -14,26 +14,30 @@ namespace ns3 {
 		}
 
 		double delta(uint16_t n_id){
-		    double gt=6;//Gt 6ms (Guard time)
+		    double gt = 6/1000; //Gt 6ms (Guard time)
+		    double toa = get_toa(n_id);
+		    double tmp = (toa + gt) * n_id;
+		    return tmp;
+		}
 
-		    double n_pre=10.5; //Preamble length, CRS, errors, other meta data (symbols); Specify during simulation
-		    uint16_t sf=7; //Affect bandwidth, trans rate, range (distance) [7..12] -> Make it random, device can pick any
-		    double bw=125*1000; //Bandwidth; 125, 250, 500 kHz; Specify during simulation
-		    double t_sym=(pow(2, sf))/bw; // Duration of simbol
-		    double r_sym=1/t_sym; //Symbol rate
+		double get_toa(uint16_t n_id){
+			double n_pre=8; //Preamble length, CRS, errors, other meta data (symbols); Specify during simulation
+			int sf=7; //Affect bandwidth, trans rate, range (distance) [7..12] -> Make it random, device can pick any
+			int bw=125000; //Bandwidth; 125, 250, 500 kHz; Specify during simulation
+			double t_sym = (pow(2, sf))/bw; // Duration of simbol
 
-		    uint16_t pl=50; //Payload length [pre][pl] in bytes [30..50]
-		    uint16_t crc=1; //Cyclic redundancy check flag [1-disable or 0-enable]; Specify during simulation
-		    uint16_t h=1; //Header flag [1-disable or 0-enable]
-		    uint16_t de=0; //Data rate optimizer not enabled; [1-enabled or 0-disabled]
-		    double cr=4/5; //[1: 4/5, 2: 4/6, 3: 4/7, 4: 4/8]; Specify during simulation
-
-		    double t1=(n_pre+4.25)*1/r_sym;
-		    double t2=(8*pl - 4*sf + 28 + 16*crc - 20*h)/(4*(sf - 2*de));
-		    double t3=(ceil(t2) * (cr + 4));
-		    double toa=t1 + (8 + fmax(t3, 0) * 1/r_sym);//Time on Air for the packets
-		    //cout << "TOA: "<< toa << endl;
-		    return ((toa * 1000 + gt) * n_id)/1000;
+			int pl=59; //Payload length [pre][pl] in bytes [30..50]
+			int crc=1; //Cyclic redundancy check flag [1-disable or 0-enable]; Specify during simulation
+			int h=0; //Header flag [1-disable or 0-enable]
+			int de=0; //Data rate optimizer not enabled; [1-enabled or 0-disabled]
+			double cr=1; //[1: 4/5, 2: 4/6, 3: 4/7, 4: 4/8]; Specify during simulation
+			double tPreamble = (double(n_pre) + 4.25)*t_sym;
+			double num = 8*pl - 4*sf + 28 + 16*crc - 20*h;
+			double den = 4*(sf - 2*de);
+			double payloadSymbNb = 8 + fmax(ceil(num/den)*(cr + 4), double(0));
+			double tPayload = payloadSymbNb * t_sym;
+			double toa = tPayload + tPreamble;//Time on Air for the packets
+			return toa;
 		}
 
 	}
