@@ -88,8 +88,7 @@ void TDMASender::SendPacket(void) {
 
 	Simulator::Cancel(m_sendEvent);
 	m_send_window = delta(1);
-	m_sendEvent = Simulator::Schedule(Seconds(slot), &TDMASender::ScheduleReach,
-			this);
+	m_sendEvent = Simulator::Schedule(Seconds(slot), &TDMASender::ScheduleReach, this);
 }
 
 void TDMASender::StartApplication(void) {

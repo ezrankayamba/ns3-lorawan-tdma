@@ -34,11 +34,13 @@ NS_LOG_COMPONENT_DEFINE("EvaNetworkTDMAv4");
 int main(int argc, char *argv[]) {
 	uint16_t nDevices = 2;
 	uint16_t nPeriods = 20;
+	uint16_t nHours = 2;
 	uint16_t interval = 60 * 30; //30 minutes by default
 
 	CommandLine cmd;
 	cmd.AddValue("nDevices", "Number of end devices", nDevices);
 	cmd.AddValue("interval", "Trigger sending interval in seconds", interval);
+	cmd.AddValue("nHours", "Simulation hours", nHours);
 	cmd.Parse(argc, argv);
 
 	NS_LOG_INFO("Params: " << nDevices << ", " << interval);
@@ -224,7 +226,7 @@ int main(int argc, char *argv[]) {
 	 *  Simulation  *
 	 ****************/
 
-	Simulator::Stop(Hours(1));
+	Simulator::Stop(Hours(nHours));
 
 	Simulator::Run();
 
