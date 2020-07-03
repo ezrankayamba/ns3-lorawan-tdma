@@ -7,7 +7,7 @@
 #     conf.check_nonfatal(header_name='stdint.h', define_name='HAVE_STDINT_H')
 
 def build(bld):
-    module = bld.create_ns3_module('lorawan', ['core', 'network',
+    module = bld.create_ns3_module('lorawan-tdma', ['core', 'network',
                                                'propagation', 'mobility',
                                                'point-to-point', 'energy',
                                                'buildings'])
@@ -50,6 +50,8 @@ def build(bld):
         'model/lora-utils.cc',
         'model/adr-component.cc',
         'model/hex-grid-position-allocator.cc',
+        'model/tdma.cc',
+        'model/tdma-sender.cc',
         'helper/lora-radio-energy-model-helper.cc',
         'helper/lora-helper.cc',
         'helper/lora-phy-helper.cc',
@@ -59,6 +61,8 @@ def build(bld):
         'helper/forwarder-helper.cc',
         'helper/network-server-helper.cc',
         'helper/lora-packet-tracker.cc',
+        'helper/tdma-helper.cc',
+        'helper/tdma-sender-helper.cc',
         'test/utilities.cc',
         ]
 
@@ -71,7 +75,7 @@ def build(bld):
         ]
 
     headers = bld(features='ns3header')
-    headers.module = 'lorawan'
+    headers.module = 'lorawan-tdma'
     headers.source = [
         'model/lora-net-device.h',
         'model/lorawan-mac.h',
@@ -111,6 +115,8 @@ def build(bld):
         'model/lora-utils.h',
         'model/adr-component.h',
         'model/hex-grid-position-allocator.h',
+        'model/tdma.h',
+        'model/tdma-sender.h',
         'helper/lora-radio-energy-model-helper.h',
         'helper/lora-helper.h',
         'helper/lora-phy-helper.h',
@@ -120,6 +126,8 @@ def build(bld):
         'helper/forwarder-helper.h',
         'helper/network-server-helper.h',
         'helper/lora-packet-tracker.h',
+        'helper/tdma-helper.h',
+        'helper/tdma-sender-helper.h',
         'test/utilities.h',
         ]
 

@@ -15,7 +15,7 @@
 
 namespace ns3 {
 
-namespace tdma {
+namespace lorawan {
 
 /**
  * This class can be used to install OneShotSender applications on multiple

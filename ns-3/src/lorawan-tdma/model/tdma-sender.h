@@ -12,7 +12,7 @@ using namespace lorawan;
 
 namespace ns3 {
 
-namespace tdma {
+namespace lorawan {
 struct TDMAParams {
 	uint16_t interval;
 };

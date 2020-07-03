@@ -1,38 +1,38 @@
 Waf: Entering directory `/home/ubuntu/ns3-project/ns-3/build'
 Waf: Leaving directory `/home/ubuntu/ns3-project/ns-3/build'
 Build commands will be stored in build/compile_commands.json
-'build' finished successfully (0.670s)
+'build' finished successfully (0.989s)
 EvaNetworkTDMAv4:main(): Creating the channel...
 +0.000000000s -1 EvaNetworkTDMAv4:main(): Setting up helpers...
 +0.000000000s -1 EvaNetworkTDMAv4:main(): Creating the end device...
-+0.000000000s -1 LoraPhy:SetChannel(0x557bb529d430, 0x557bb52813f0)
-+0.000000000s -1 LoraPhy:SetDevice(0x557bb529d430, 0x557bb52ecfb0)
-+0.000000000s -1 ClassAEndDeviceLorawanMac:ClassAEndDeviceLorawanMac(0x557bb528bd40)
-+0.000000000s -1 LoraPhy:SetChannel(0x557bb529b390, 0x557bb52813f0)
-+0.000000000s -1 LoraPhy:SetDevice(0x557bb529b390, 0x557bb52efce0)
-+0.000000000s -1 ClassAEndDeviceLorawanMac:ClassAEndDeviceLorawanMac(0x557bb52f00e0)
++0.000000000s -1 LoraPhy:SetChannel(0x557c90026430, 0x557c9000a3f0)
++0.000000000s -1 LoraPhy:SetDevice(0x557c90026430, 0x557c90075fb0)
++0.000000000s -1 ClassAEndDeviceLorawanMac:ClassAEndDeviceLorawanMac(0x557c90014d40)
++0.000000000s -1 LoraPhy:SetChannel(0x557c90024390, 0x557c9000a3f0)
++0.000000000s -1 LoraPhy:SetDevice(0x557c90024390, 0x557c90078ce0)
++0.000000000s -1 ClassAEndDeviceLorawanMac:ClassAEndDeviceLorawanMac(0x557c900790e0)
 +0.000000000s -1 EvaNetworkTDMAv4:main(): Creating the gateway...
 +0.000000000s -1 GatewayLoraPhy:GatewayLoraPhy()
-+0.000000000s -1 LoraPhy:SetChannel(0x557bb51cd1f0, 0x557bb52813f0)
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.1)
++0.000000000s -1 LoraPhy:SetChannel(0x557c8ff561f0, 0x557c9000a3f0)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.1)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.3)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.5)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.5)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.1)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.3)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.5)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.5)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.1)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.3)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 LoraPhy:SetDevice(0x557bb51cd1f0, 0x557bb52f0b10)
-+0.000000000s -1 GatewayLorawanMac:GatewayLorawanMac(0x557bb52914e0)
-+0.000000000s -1 GatewayLoraPhy:ResetReceptionPaths(0x557bb51cd1f0)
++0.000000000s -1 LoraPhy:SetDevice(0x557c8ff561f0, 0x557c90079b10)
++0.000000000s -1 GatewayLorawanMac:GatewayLorawanMac(0x557c9001a4e0)
++0.000000000s -1 GatewayLoraPhy:ResetReceptionPaths(0x557c8ff561f0)
 +0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
 +0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
 +0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
@@ -41,33 +41,33 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
 +0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
 +0.000000000s -1 GatewayLoraPhy:~ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.1)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.3)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.5)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.5)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.1)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.3)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.5)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.5)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.1)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.1)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557bb51cd1f0, 868.3)
++0.000000000s -1 GatewayLoraPhy:AddReceptionPath(0x557c8ff561f0, 868.3)
 +0.000000000s -1 GatewayLoraPhy:ReceptionPath()
-+0.000000000s 0 TDMASender:StartApplication(0x557bb51ffb90)
-+0.000000000s 0 TDMASender:StartApplication(): Starting Application with DELTA of 0 seconds, At: 2020-06-27 13:16:57
-+0.000000000s 1 TDMASender:StartApplication(0x557bb5228430)
-+0.000000000s 1 TDMASender:StartApplication(): Starting Application with DELTA of 0.112896 seconds, At: 2020-06-27 13:16:57
-+0.000000000s 0 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0, Tracker: 4, Now: 2020-06-27 13:16:57, Next: 2020-06-27 13:16:57
-+0.000000000s 1 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0.112896, Tracker: 0, Now: 2020-06-27 13:16:57, Next: 2020-06-27 13:16:57
-+0.000000000s 0 TDMASender:ScheduleReach(): Sent: 33, At: 2020-06-27 13:16:57, The packet: 0x557bb52f7ce0
++0.000000000s 0 TDMASender:StartApplication(0x557c8ff88b90)
++0.000000000s 0 TDMASender:StartApplication(): Starting Application with DELTA of 0 seconds, At: 2020-06-27 14:55:03
++0.000000000s 1 TDMASender:StartApplication(0x557c8ffb1430)
++0.000000000s 1 TDMASender:StartApplication(): Starting Application with DELTA of 0.112896 seconds, At: 2020-06-27 14:55:03
++0.000000000s 0 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0, Tracker: 4, Now: 2020-06-27 14:55:03, Next: 2020-06-27 14:55:03
++0.000000000s 1 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0.112896, Tracker: 0, Now: 2020-06-27 14:55:03, Next: 2020-06-27 14:55:03
++0.000000000s 0 TDMASender:ScheduleReach(): Sent: 33, At: 2020-06-27 14:55:03, The packet: 0x557c90080ce0
 +0.000000000s 0 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
-+0.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb52f7ce0
-+0.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb52f7ce0
-+0.000000000s 0 LoraPhy:GetOnAirTime(0x557bb52f7ce0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++0.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c90080ce0
++0.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c90080ce0
++0.000000000s 0 LoraPhy:GetOnAirTime(0x557c90080ce0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +0.000000000s 0 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +0.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 42 bytes
 +0.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 352, den = 28, payloadSymbNb = 73, tSym = 0.001024
@@ -77,7 +77,7 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +0.000000000s 0 LoraPhy:GetMobility()
 +0.000000000s 0 LoraPhy:GetMobility()
 +0.000000000s 0 LoraPhy:GetMobility()
-+0.000000000s 0 LoraPhy:GetOnAirTime(0x557bb52f7ce0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++0.000000000s 0 LoraPhy:GetOnAirTime(0x557c90080ce0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +0.000000000s 0 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +0.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 42 bytes
 +0.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 352, den = 28, payloadSymbNb = 73, tSym = 0.001024
@@ -86,15 +86,15 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +0.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.087296
 +0.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5
 +0.000000000s 0 TDMASender:ScheduleReach(): Interval(seconds): 1800
-+0.087295999s 2 GatewayLorawanMac:Receive(0x557bb52914e0, 0x557bb52f7ce0)
-+0.087295999s 2 GatewayLorawanMac:Receive(): Received packet: 0x557bb52f7ce0
++0.087295999s 2 GatewayLorawanMac:Receive(0x557c9001a4e0, 0x557c90080ce0)
++0.087295999s 2 GatewayLorawanMac:Receive(): Received packet: 0x557c90080ce0
 +0.087296009s 0 ClassAEndDeviceLorawanMac:TxFinished()
 +0.087296009s 0 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
-+0.112895999s 1 TDMASender:ScheduleReach(): Sent: 42, At: 2020-06-27 13:16:57, The packet: 0x557bb52f7dd0
++0.112895999s 1 TDMASender:ScheduleReach(): Sent: 42, At: 2020-06-27 14:55:03, The packet: 0x557c90080dd0
 +0.112895999s 1 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
-+0.112895999s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb52f7dd0
-+0.112895999s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb52f7dd0
-+0.112895999s 1 LoraPhy:GetOnAirTime(0x557bb52f7dd0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++0.112895999s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c90080dd0
++0.112895999s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c90080dd0
++0.112895999s 1 LoraPhy:GetOnAirTime(0x557c90080dd0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +0.112895999s 1 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +0.112895999s 1 LoraPhy:GetOnAirTime(): Packet of size 51 bytes
 +0.112895999s 1 LoraPhy:GetOnAirTime(): Time computation: num = 424, den = 28, payloadSymbNb = 88, tSym = 0.001024
@@ -104,7 +104,7 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +0.112895999s 1 LoraPhy:GetMobility()
 +0.112895999s 1 LoraPhy:GetMobility()
 +0.112895999s 1 LoraPhy:GetMobility()
-+0.112895999s 1 LoraPhy:GetOnAirTime(0x557bb52f7dd0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++0.112895999s 1 LoraPhy:GetOnAirTime(0x557c90080dd0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +0.112895999s 1 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +0.112895999s 1 LoraPhy:GetOnAirTime(): Packet of size 51 bytes
 +0.112895999s 1 LoraPhy:GetOnAirTime(): Time computation: num = 424, den = 28, payloadSymbNb = 88, tSym = 0.001024
@@ -113,16 +113,16 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +0.112895999s 1 LoraPhy:GetOnAirTime(): Total time = 0.102656
 +0.112895999s 1 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5
 +0.112895999s 1 TDMASender:ScheduleReach(): Interval(seconds): 1800
-+0.215551998s 2 GatewayLorawanMac:Receive(0x557bb52914e0, 0x557bb52f7dd0)
-+0.215551998s 2 GatewayLorawanMac:Receive(): Received packet: 0x557bb52f7dd0
++0.215551998s 2 GatewayLorawanMac:Receive(0x557c9001a4e0, 0x557c90080dd0)
++0.215551998s 2 GatewayLorawanMac:Receive(): Received packet: 0x557c90080dd0
 +0.215552008s 1 ClassAEndDeviceLorawanMac:TxFinished()
 +0.215552008s 1 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
-+1800.000000000s 0 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0, Tracker: 4, Now: 2020-06-27 13:46:57, Next: 2020-06-27 13:46:57
-+1800.000000000s 0 TDMASender:ScheduleReach(): Sent: 36, At: 2020-06-27 13:46:57, The packet: 0x557bb520fee0
++1800.000000000s 0 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0, Tracker: 4, Now: 2020-06-27 15:25:03, Next: 2020-06-27 15:25:03
++1800.000000000s 0 TDMASender:ScheduleReach(): Sent: 36, At: 2020-06-27 15:25:03, The packet: 0x557c8ff98ee0
 +1800.000000000s 0 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
-+1800.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb520fee0
-+1800.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb520fee0
-+1800.000000000s 0 LoraPhy:GetOnAirTime(0x557bb520fee0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++1800.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c8ff98ee0
++1800.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c8ff98ee0
++1800.000000000s 0 LoraPhy:GetOnAirTime(0x557c8ff98ee0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +1800.000000000s 0 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +1800.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 45 bytes
 +1800.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 376, den = 28, payloadSymbNb = 78, tSym = 0.001024
@@ -132,7 +132,7 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +1800.000000000s 0 LoraPhy:GetMobility()
 +1800.000000000s 0 LoraPhy:GetMobility()
 +1800.000000000s 0 LoraPhy:GetMobility()
-+1800.000000000s 0 LoraPhy:GetOnAirTime(0x557bb520fee0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++1800.000000000s 0 LoraPhy:GetOnAirTime(0x557c8ff98ee0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +1800.000000000s 0 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +1800.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 45 bytes
 +1800.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 376, den = 28, payloadSymbNb = 78, tSym = 0.001024
@@ -141,16 +141,16 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +1800.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.092416
 +1800.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5
 +1800.000000000s 0 TDMASender:ScheduleReach(): Interval(seconds): 1800
-+1800.092415999s 2 GatewayLorawanMac:Receive(0x557bb52914e0, 0x557bb520fee0)
-+1800.092415999s 2 GatewayLorawanMac:Receive(): Received packet: 0x557bb520fee0
++1800.092415999s 2 GatewayLorawanMac:Receive(0x557c9001a4e0, 0x557c8ff98ee0)
++1800.092415999s 2 GatewayLorawanMac:Receive(): Received packet: 0x557c8ff98ee0
 +1800.092416009s 0 ClassAEndDeviceLorawanMac:TxFinished()
 +1800.092416009s 0 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
-+1800.112895999s 1 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0.112896, Tracker: 4, Now: 2020-06-27 13:46:57, Next: 2020-06-27 13:46:57
-+1800.225791998s 1 TDMASender:ScheduleReach(): Sent: 38, At: 2020-06-27 13:46:57, The packet: 0x557bb52ed8e0
++1800.112895999s 1 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0.112896, Tracker: 4, Now: 2020-06-27 15:25:03, Next: 2020-06-27 15:25:03
++1800.225791998s 1 TDMASender:ScheduleReach(): Sent: 38, At: 2020-06-27 15:25:03, The packet: 0x557c900768e0
 +1800.225791998s 1 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
-+1800.225791998s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb52ed8e0
-+1800.225791998s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb52ed8e0
-+1800.225791998s 1 LoraPhy:GetOnAirTime(0x557bb52ed8e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++1800.225791998s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c900768e0
++1800.225791998s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c900768e0
++1800.225791998s 1 LoraPhy:GetOnAirTime(0x557c900768e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +1800.225791998s 1 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +1800.225791998s 1 LoraPhy:GetOnAirTime(): Packet of size 47 bytes
 +1800.225791998s 1 LoraPhy:GetOnAirTime(): Time computation: num = 392, den = 28, payloadSymbNb = 78, tSym = 0.001024
@@ -160,7 +160,7 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +1800.225791998s 1 LoraPhy:GetMobility()
 +1800.225791998s 1 LoraPhy:GetMobility()
 +1800.225791998s 1 LoraPhy:GetMobility()
-+1800.225791998s 1 LoraPhy:GetOnAirTime(0x557bb52ed8e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++1800.225791998s 1 LoraPhy:GetOnAirTime(0x557c900768e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +1800.225791998s 1 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +1800.225791998s 1 LoraPhy:GetOnAirTime(): Packet of size 47 bytes
 +1800.225791998s 1 LoraPhy:GetOnAirTime(): Time computation: num = 392, den = 28, payloadSymbNb = 78, tSym = 0.001024
@@ -169,16 +169,16 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +1800.225791998s 1 LoraPhy:GetOnAirTime(): Total time = 0.092416
 +1800.225791998s 1 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5
 +1800.225791998s 1 TDMASender:ScheduleReach(): Interval(seconds): 1800
-+1800.318207997s 2 GatewayLorawanMac:Receive(0x557bb52914e0, 0x557bb52ed8e0)
-+1800.318207997s 2 GatewayLorawanMac:Receive(): Received packet: 0x557bb52ed8e0
++1800.318207997s 2 GatewayLorawanMac:Receive(0x557c9001a4e0, 0x557c900768e0)
++1800.318207997s 2 GatewayLorawanMac:Receive(): Received packet: 0x557c900768e0
 +1800.318208007s 1 ClassAEndDeviceLorawanMac:TxFinished()
 +1800.318208007s 1 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
-+3600.000000000s 0 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0, Tracker: 4, Now: 2020-06-27 14:16:57, Next: 2020-06-27 14:16:57
-+3600.000000000s 0 TDMASender:ScheduleReach(): Sent: 48, At: 2020-06-27 14:16:57, The packet: 0x557bb51dc8e0
++3600.000000000s 0 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0, Tracker: 4, Now: 2020-06-27 15:55:03, Next: 2020-06-27 15:55:03
++3600.000000000s 0 TDMASender:ScheduleReach(): Sent: 48, At: 2020-06-27 15:55:03, The packet: 0x557c8ff658e0
 +3600.000000000s 0 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
-+3600.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb51dc8e0
-+3600.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb51dc8e0
-+3600.000000000s 0 LoraPhy:GetOnAirTime(0x557bb51dc8e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++3600.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c8ff658e0
++3600.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c8ff658e0
++3600.000000000s 0 LoraPhy:GetOnAirTime(0x557c8ff658e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +3600.000000000s 0 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +3600.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 57 bytes
 +3600.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 472, den = 28, payloadSymbNb = 93, tSym = 0.001024
@@ -188,7 +188,7 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +3600.000000000s 0 LoraPhy:GetMobility()
 +3600.000000000s 0 LoraPhy:GetMobility()
 +3600.000000000s 0 LoraPhy:GetMobility()
-+3600.000000000s 0 LoraPhy:GetOnAirTime(0x557bb51dc8e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++3600.000000000s 0 LoraPhy:GetOnAirTime(0x557c8ff658e0, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +3600.000000000s 0 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +3600.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 57 bytes
 +3600.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 472, den = 28, payloadSymbNb = 93, tSym = 0.001024
@@ -197,16 +197,16 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +3600.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.107776
 +3600.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5
 +3600.000000000s 0 TDMASender:ScheduleReach(): Interval(seconds): 1800
-+3600.107775999s 2 GatewayLorawanMac:Receive(0x557bb52914e0, 0x557bb51dc8e0)
-+3600.107775999s 2 GatewayLorawanMac:Receive(): Received packet: 0x557bb51dc8e0
++3600.107775999s 2 GatewayLorawanMac:Receive(0x557c9001a4e0, 0x557c8ff658e0)
++3600.107775999s 2 GatewayLorawanMac:Receive(): Received packet: 0x557c8ff658e0
 +3600.107776009s 0 ClassAEndDeviceLorawanMac:TxFinished()
 +3600.107776009s 0 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
-+3600.225791998s 1 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0.112896, Tracker: 4, Now: 2020-06-27 14:16:57, Next: 2020-06-27 14:16:57
-+3600.338687997s 1 TDMASender:ScheduleReach(): Sent: 31, At: 2020-06-27 14:16:57, The packet: 0x557bb5246a00
++3600.225791998s 1 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0.112896, Tracker: 4, Now: 2020-06-27 15:55:03, Next: 2020-06-27 15:55:03
++3600.338687997s 1 TDMASender:ScheduleReach(): Sent: 31, At: 2020-06-27 15:55:03, The packet: 0x557c8ffcfa00
 +3600.338687997s 1 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
-+3600.338687997s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb5246a00
-+3600.338687997s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb5246a00
-+3600.338687997s 1 LoraPhy:GetOnAirTime(0x557bb5246a00, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++3600.338687997s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c8ffcfa00
++3600.338687997s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c8ffcfa00
++3600.338687997s 1 LoraPhy:GetOnAirTime(0x557c8ffcfa00, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +3600.338687997s 1 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +3600.338687997s 1 LoraPhy:GetOnAirTime(): Packet of size 40 bytes
 +3600.338687997s 1 LoraPhy:GetOnAirTime(): Time computation: num = 336, den = 28, payloadSymbNb = 68, tSym = 0.001024
@@ -216,7 +216,7 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +3600.338687997s 1 LoraPhy:GetMobility()
 +3600.338687997s 1 LoraPhy:GetMobility()
 +3600.338687997s 1 LoraPhy:GetMobility()
-+3600.338687997s 1 LoraPhy:GetOnAirTime(0x557bb5246a00, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++3600.338687997s 1 LoraPhy:GetOnAirTime(0x557c8ffcfa00, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +3600.338687997s 1 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +3600.338687997s 1 LoraPhy:GetOnAirTime(): Packet of size 40 bytes
 +3600.338687997s 1 LoraPhy:GetOnAirTime(): Time computation: num = 336, den = 28, payloadSymbNb = 68, tSym = 0.001024
@@ -225,16 +225,16 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +3600.338687997s 1 LoraPhy:GetOnAirTime(): Total time = 0.082176
 +3600.338687997s 1 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5
 +3600.338687997s 1 TDMASender:ScheduleReach(): Interval(seconds): 1800
-+3600.420863996s 2 GatewayLorawanMac:Receive(0x557bb52914e0, 0x557bb5246a00)
-+3600.420863996s 2 GatewayLorawanMac:Receive(): Received packet: 0x557bb5246a00
++3600.420863996s 2 GatewayLorawanMac:Receive(0x557c9001a4e0, 0x557c8ffcfa00)
++3600.420863996s 2 GatewayLorawanMac:Receive(): Received packet: 0x557c8ffcfa00
 +3600.420864006s 1 ClassAEndDeviceLorawanMac:TxFinished()
 +3600.420864006s 1 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
-+5400.000000000s 0 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0, Tracker: 4, Now: 2020-06-27 14:46:57, Next: 2020-06-27 14:46:57
-+5400.000000000s 0 TDMASender:ScheduleReach(): Sent: 38, At: 2020-06-27 14:46:57, The packet: 0x557bb52ec150
++5400.000000000s 0 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0, Tracker: 4, Now: 2020-06-27 16:25:03, Next: 2020-06-27 16:25:03
++5400.000000000s 0 TDMASender:ScheduleReach(): Sent: 38, At: 2020-06-27 16:25:03, The packet: 0x557c90075150
 +5400.000000000s 0 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
-+5400.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb52ec150
-+5400.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb52ec150
-+5400.000000000s 0 LoraPhy:GetOnAirTime(0x557bb52ec150, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++5400.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c90075150
++5400.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c90075150
++5400.000000000s 0 LoraPhy:GetOnAirTime(0x557c90075150, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +5400.000000000s 0 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +5400.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 47 bytes
 +5400.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 392, den = 28, payloadSymbNb = 78, tSym = 0.001024
@@ -244,7 +244,7 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +5400.000000000s 0 LoraPhy:GetMobility()
 +5400.000000000s 0 LoraPhy:GetMobility()
 +5400.000000000s 0 LoraPhy:GetMobility()
-+5400.000000000s 0 LoraPhy:GetOnAirTime(0x557bb52ec150, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++5400.000000000s 0 LoraPhy:GetOnAirTime(0x557c90075150, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +5400.000000000s 0 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +5400.000000000s 0 LoraPhy:GetOnAirTime(): Packet of size 47 bytes
 +5400.000000000s 0 LoraPhy:GetOnAirTime(): Time computation: num = 392, den = 28, payloadSymbNb = 78, tSym = 0.001024
@@ -253,16 +253,16 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +5400.000000000s 0 LoraPhy:GetOnAirTime(): Total time = 0.092416
 +5400.000000000s 0 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5
 +5400.000000000s 0 TDMASender:ScheduleReach(): Interval(seconds): 1800
-+5400.092415999s 2 GatewayLorawanMac:Receive(0x557bb52914e0, 0x557bb52ec150)
-+5400.092415999s 2 GatewayLorawanMac:Receive(): Received packet: 0x557bb52ec150
++5400.092415999s 2 GatewayLorawanMac:Receive(0x557c9001a4e0, 0x557c90075150)
++5400.092415999s 2 GatewayLorawanMac:Receive(): Received packet: 0x557c90075150
 +5400.092416009s 0 ClassAEndDeviceLorawanMac:TxFinished()
 +5400.092416009s 0 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
-+5400.338687997s 1 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0.112896, Tracker: 4, Now: 2020-06-27 14:46:57, Next: 2020-06-27 14:46:57
-+5400.451583996s 1 TDMASender:ScheduleReach(): Sent: 50, At: 2020-06-27 14:46:57, The packet: 0x557bb522c060
++5400.338687997s 1 TDMASender:SendPacket(): New window; TOA: 0.112896, Slot: 0.112896, Tracker: 4, Now: 2020-06-27 16:25:03, Next: 2020-06-27 16:25:03
++5400.451583996s 1 TDMASender:ScheduleReach(): Sent: 50, At: 2020-06-27 16:25:03, The packet: 0x557c8ffb5060
 +5400.451583996s 1 ClassAEndDeviceLorawanMac:GetNextClassTransmissionDelay()
-+5400.451583996s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb522c060
-+5400.451583996s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557bb522c060
-+5400.451583996s 1 LoraPhy:GetOnAirTime(0x557bb522c060, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++5400.451583996s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c8ffb5060
++5400.451583996s 1 ClassAEndDeviceLorawanMac:SendToPhy(): PacketToSend: 0x557c8ffb5060
++5400.451583996s 1 LoraPhy:GetOnAirTime(0x557c8ffb5060, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +5400.451583996s 1 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +5400.451583996s 1 LoraPhy:GetOnAirTime(): Packet of size 59 bytes
 +5400.451583996s 1 LoraPhy:GetOnAirTime(): Time computation: num = 488, den = 28, payloadSymbNb = 98, tSym = 0.001024
@@ -272,7 +272,7 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +5400.451583996s 1 LoraPhy:GetMobility()
 +5400.451583996s 1 LoraPhy:GetMobility()
 +5400.451583996s 1 LoraPhy:GetMobility()
-+5400.451583996s 1 LoraPhy:GetOnAirTime(0x557bb522c060, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
++5400.451583996s 1 LoraPhy:GetOnAirTime(0x557c8ffb5060, SF: 7, headerDisabled: 0, codingRate: 1, bandwidthHz: 125000, nPreamble: 8, crcEnabled: 1, lowDataRateOptimizationEnabled: 0))
 +5400.451583996s 1 LoraPhy:GetOnAirTime(): tSym: 0.001024
 +5400.451583996s 1 LoraPhy:GetOnAirTime(): Packet of size 59 bytes
 +5400.451583996s 1 LoraPhy:GetOnAirTime(): Time computation: num = 488, den = 28, payloadSymbNb = 98, tSym = 0.001024
@@ -281,8 +281,8 @@ EvaNetworkTDMAv4:main(): Creating the channel...
 +5400.451583996s 1 LoraPhy:GetOnAirTime(): Total time = 0.112896
 +5400.451583996s 1 ClassAEndDeviceLorawanMac:SendToPhy(): m_dataRate: 5
 +5400.451583996s 1 TDMASender:ScheduleReach(): Interval(seconds): 1800
-+5400.564479995s 2 GatewayLorawanMac:Receive(0x557bb52914e0, 0x557bb522c060)
-+5400.564479995s 2 GatewayLorawanMac:Receive(): Received packet: 0x557bb522c060
++5400.564479995s 2 GatewayLorawanMac:Receive(0x557c9001a4e0, 0x557c8ffb5060)
++5400.564479995s 2 GatewayLorawanMac:Receive(): Received packet: 0x557c8ffb5060
 +5400.564480005s 1 ClassAEndDeviceLorawanMac:TxFinished()
 +5400.564480005s 1 ClassAEndDeviceLorawanMac:TxFinished(): Max Retransmit: 0
 TDMASender:~TDMASender()

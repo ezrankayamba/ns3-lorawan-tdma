@@ -4,7 +4,7 @@
 
 namespace ns3 {
 
-	namespace tdma {
+	namespace lorawan {
 
 		void fmt_date_tm(tm *ltm, char * date_str, double add_sec){
 //			tm *ltm = localtime(&tm_in);

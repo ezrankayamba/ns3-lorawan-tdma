@@ -12,7 +12,7 @@
 
 namespace ns3 {
 
-namespace tdma {
+namespace lorawan {
 NS_LOG_COMPONENT_DEFINE("TDMASender");
 
 NS_OBJECT_ENSURE_REGISTERED(TDMASender);
@@ -44,9 +44,9 @@ void TDMASender::SetTDMAParams(TDMAParams params) {
 void TDMASender::ScheduleReach(void) {
 //	NS_LOG_FUNCTION_NOARGS ();
 
-	Ptr<RandomVariableStream> rv = CreateObjectWithAttributes<
-			UniformRandomVariable>("Min", DoubleValue(30), "Max",
-			DoubleValue(50));
+	Ptr < RandomVariableStream > rv = CreateObjectWithAttributes
+			< UniformRandomVariable
+			> ("Min", DoubleValue(30), "Max", DoubleValue(50));
 	m_packet = rv->GetInteger();
 	tm ltm = startTime;
 	double sim_tm = Simulator::Now().GetSeconds();
@@ -55,14 +55,15 @@ void TDMASender::ScheduleReach(void) {
 	fmt_date_tm(&ltm, now_str, 0);
 	ltm.tm_sec -= sim_tm;
 
-	Ptr<Packet> packet = Create<Packet>(m_packet);
+	Ptr < Packet > packet = Create < Packet > (m_packet);
 	NS_LOG_INFO(
 			"Sent: "<<this->m_packet <<", At: " << now_str << ", The packet: " << packet);
 	m_mac->Send(packet);
 
-	Simulator::Cancel(m_sendEvent);
+	Simulator::Cancel (m_sendEvent);
 	NS_LOG_INFO("Interval(seconds): " << m_interval);
-	m_sendEvent = Simulator::Schedule(Seconds(m_interval), &TDMASender::SendPacket, this);
+	m_sendEvent = Simulator::Schedule(Seconds(m_interval),
+			&TDMASender::SendPacket, this);
 }
 
 void TDMASender::SendPacket(void) {
@@ -70,9 +71,9 @@ void TDMASender::SendPacket(void) {
 //  NS_LOG_FUNCTION_NOARGS ();
 	tm ltm = startTime;
 	if (m_tracker == 0) {
-		Ptr<RandomVariableStream> rv = CreateObjectWithAttributes<
-				UniformRandomVariable>("Min", DoubleValue(0), "Max",
-				DoubleValue(5));
+		Ptr < RandomVariableStream > rv = CreateObjectWithAttributes
+				< UniformRandomVariable
+				> ("Min", DoubleValue(0), "Max", DoubleValue(5));
 		m_tracker = rv->GetInteger();
 	}
 
@@ -86,9 +87,10 @@ void TDMASender::SendPacket(void) {
 	NS_LOG_INFO(
 			"New window; TOA: " << toa << ", Slot: " << slot << ", Tracker: " << m_tracker << ", Now: "<<now_str <<", Next: " << date_str);
 
-	Simulator::Cancel(m_sendEvent);
+	Simulator::Cancel (m_sendEvent);
 	m_send_window = delta(1);
-	m_sendEvent = Simulator::Schedule(Seconds(slot), &TDMASender::ScheduleReach, this);
+	m_sendEvent = Simulator::Schedule(Seconds(slot), &TDMASender::ScheduleReach,
+			this);
 }
 
 void TDMASender::StartApplication(void) {
@@ -105,7 +107,7 @@ void TDMASender::StartApplication(void) {
 	// Make sure we have a MAC layer
 	if (m_mac == 0) {
 		// Assumes there's only one device
-		Ptr<LoraNetDevice> loraNetDevice = m_node->GetDevice(0)->GetObject<
+		Ptr < LoraNetDevice > loraNetDevice = m_node->GetDevice(0)->GetObject<
 				LoraNetDevice>();
 
 		m_mac = loraNetDevice->GetMac();
@@ -113,7 +115,7 @@ void TDMASender::StartApplication(void) {
 	}
 
 	// Schedule the next SendPacket event
-	Simulator::Cancel(m_sendEvent);
+	Simulator::Cancel (m_sendEvent);
 	m_sendEvent = Simulator::Schedule(Seconds(0), &TDMASender::SendPacket,
 			this);
 }
@@ -121,7 +123,7 @@ void TDMASender::StartApplication(void) {
 void TDMASender::StopApplication(void) {
 	NS_LOG_FUNCTION_NOARGS ();
 	NS_LOG_INFO("Stopping Application");
-	Simulator::Cancel(m_sendEvent);
+	Simulator::Cancel (m_sendEvent);
 }
 
 }

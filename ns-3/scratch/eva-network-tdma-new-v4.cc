@@ -27,7 +27,7 @@
 
 using namespace ns3;
 using namespace lorawan;
-using namespace tdma;
+//using namespace tdma;
 
 NS_LOG_COMPONENT_DEFINE("EvaNetworkTDMAv4");
 

@@ -11,7 +11,7 @@
 
 namespace ns3 {
 
-namespace tdma {
+namespace lorawan {
 
 NS_LOG_COMPONENT_DEFINE("TDMASenderHelper");
 
